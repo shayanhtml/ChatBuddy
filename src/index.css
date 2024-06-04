@@ -1,0 +1,78 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; /* Updated font family */
+}
+
+:root {
+  --primary-color: #02d873;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  width: 85vw;
+  height: 95vh;
+  background-color: #000000a9;
+  border-radius: 12px;
+  display: flex;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.loading {
+  padding: 20px 50px;
+  font-size: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Stylish Scrollbar for vertical scrolling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* No background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc; /* Neutral gray color for the thumb */
+  border-radius: 6px;
+  border: 3px solid transparent; /* Optional: add more styling */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95vw; /* Increase width for smaller devices */
+    height: 90vh; /* Adjust height */
+  }
+  .loading {
+    font-size: 28px; /* Smaller text on smaller screens */
+    padding: 15px 40px; /* Adjust padding */
+  }
+}
