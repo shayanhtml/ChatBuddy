@@ -12,7 +12,6 @@ const Userinfo = () => {
       </div>
       <div className="icons">
         <img src="./more.png" alt="" className="icon" />
-        <img src="./video.png" alt="" className="icon" />
         <img src="./edit.png" alt=""  className="icon"/>
       </div>
     </div>
